@@ -1,4 +1,50 @@
 abstract class AppStrings {
   AppStrings._();
-  static const String enterYourNumber = "َشماره خود را وارد کنید.";
+  static const String replace = "replace";
+  static const String enterYourNumber = "شماره خود را وارد کنید";
+  static const String hintPhoneNumber = "09121114466 : مثل";
+  static const String sendOtpCode = "ارسال کد فعال سازی";
+  static const String wrongNumberEditNumber = "شماره اشتباه است/ ویرایش شماره";
+  static const String enterVerificationCode = "- - - - - -";
+  static const String next = "ادامه";
+  static const String otpCodeSendFor = "کد فعال سازی برای $replace ارسال شد";
+  static const String register = "ثبت نام";
+  static const String chooseProfileimage = "انتخاب تصویر پروفایل";
+  static const String nameLastName = "نام و نام خانوادگی";
+  static const String homeNumber = "تلفن ثابت";
+  static const String address = "آدرس";
+  static const String postalCode = "کد پستی";
+  static const String location = "موقعیت مکانی";
+  static const String hintNameLastName =
+      "نام و نام خانوادگی خود را با حروف پارسی وارد کنید.";
+  static const String hintHomeNumber =
+      "شماره تلفن رو با پیش شماره وارد بفرمائید.";
+  static const String hintAddress = "آدرس پستی خود را وارد فرمائید.";
+  static const String hintPostalCode = "کد پستی 10 رقمی خود را وارد کنید.";
+  static const String hintLocation = "برای انتخاب موقعیت مکانی ضربه بزنید.";
+  static const String searchProduct = "جستجو محصولات";
+  static const String classic = "کلاسیک";
+  static const String smart = "هوشمند";
+  static const String digital = "دیجیتال";
+  static const String desktop = "رو میزی";
+  static const String viewAll = "مشاهده همه";
+  static const String amazing = "شگفت انگیز";
+  static const String home = "خانه";
+  static const String basket = "سبد خرید";
+  static const String profile = "پروفایل";
+  static const String topSells = "پر فروشها";
+  static const String newestProduct = "جدیدترین محصولات";
+  static const String features = "خصوصیات";
+  static const String review = "نقد و بررسی";
+  static const String comments = "نقد و بررسی";
+  static const String addToBasket = "افزودن به سبد خرید";
+  static const String count = "تعداد";
+  static const String totalPrice = "مجموع $replace تومان";
+  static const String continueToPurchase = "مجموع $replace تومان";
+  static const String useProfile = "پروفایل کاربر";
+  static const String activeAddress = "آدرس فعال";
+  static const String termOfService = "قوانین و مقررات";
+  static const String inProccess = "در حال پردازش";
+  static const String cancelled = "لغو شد";
+  static const String delivered = "تحویل شده";
 }
