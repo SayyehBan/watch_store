@@ -2,7 +2,7 @@ abstract class AppStrings {
   AppStrings._();
   static const String replace = "replace";
   static const String enterYourNumber = "شماره خود را وارد کنید";
-  static const String hintPhoneNumber = "09121114466 : مثل";
+  static const String hintPhoneNumber = "مثل : 09121114466";
   static const String sendOtpCode = "ارسال کد فعال سازی";
   static const String wrongNumberEditNumber = "شماره اشتباه است/ ویرایش شماره";
   static const String enterVerificationCode = "- - - - - -";
