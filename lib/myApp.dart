@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:watch_store/screens/otp/send_otp_screen.dart';
+import 'package:watch_store/utility/theme.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'فروشگاه ساعت',
       debugShowCheckedModeBanner: false,
+      theme: lightTheme(),
       home: Directionality(
           textDirection: TextDirection.rtl, child: SendOtpScreen()),
     );
