@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       title: 'فروشگاه ساعت',
       debugShowCheckedModeBanner: false,
       theme: lightTheme(),
-      initialRoute: ScreenNames.root,
+      initialRoute: ScreenNames.sendOtpScreen,
       routes: routes,
     );
   }

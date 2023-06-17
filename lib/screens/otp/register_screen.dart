@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:watch_store/components/appBars.dart';
 import 'package:watch_store/components/app_text_field.dart';
 import 'package:watch_store/components/avatar.dart';
 import 'package:watch_store/components/main_button.dart';
 import 'package:watch_store/utility/dimens.dart';
 import 'package:watch_store/utility/extention.dart';
 import 'package:watch_store/utility/strings.dart';
-import 'package:watch_store/utility/text_style.dart';
 
 class RigsterScreen extends StatelessWidget {
   RigsterScreen({super.key});
@@ -15,18 +14,8 @@ class RigsterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: PreferredSize(
-          preferredSize: Size(Get.width, Get.height * .1),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back)),
-              const Text(
-                AppStrings.register,
-                style: LightAppTextStyles.title,
-              )
-            ],
-          ),
+        appBar: const AppBars(
+          title: AppStrings.register,
         ),
         body: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),

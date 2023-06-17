@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:watch_store/components/app_text_field.dart';
 import 'package:watch_store/components/logo.dart';
 import 'package:watch_store/components/main_button.dart';
+import 'package:watch_store/route/names.dart';
 import 'package:watch_store/utility/dimens.dart';
 import 'package:watch_store/utility/extention.dart';
 import 'package:watch_store/utility/strings.dart';
@@ -40,7 +41,9 @@ class GetOtpScreen extends StatelessWidget {
                   controller: _controller),
               MainButton(
                 text: AppStrings.next,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, ScreenNames.registerScreen);
+                },
               )
             ],
           ),
