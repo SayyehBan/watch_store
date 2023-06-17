@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:watch_store/components/app_text_field.dart';
 import 'package:watch_store/components/logo.dart';
+import 'package:watch_store/components/main_button.dart';
 import 'package:watch_store/utility/dimens.dart';
 import 'package:watch_store/utility/extention.dart';
 import 'package:watch_store/utility/strings.dart';
@@ -21,11 +22,15 @@ class SendOtpScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Logo(),
-              Dimens.large.height,
+              AppDimens.large.height,
               AppTextField(
                   label: AppStrings.enterYourNumber,
                   hint: AppStrings.hintPhoneNumber,
-                  controller: _controller)
+                  controller: _controller),
+              MainButton(
+                text: AppStrings.next,
+                onPressed: () {},
+              )
             ],
           ),
         ),
