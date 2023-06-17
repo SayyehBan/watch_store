@@ -5,6 +5,7 @@ abstract class LightAppColors {
   static const Color title = Colors.black;
   static const Color hint = Colors.grey;
   static const Color appBar = Colors.white;
+  static const Color button = Colors.white;
   static const Color scaffoldBackgroundColor =
       Color.fromARGB(255, 251, 251, 251);
   static const Color border = Colors.grey;

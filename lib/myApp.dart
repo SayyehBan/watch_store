@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:watch_store/screens/otp/register_screen.dart';
+import 'package:watch_store/screens/otp/get_otp_screen.dart';
 import 'package:watch_store/utility/theme.dart';
 
 class MyApp extends StatelessWidget {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: lightTheme(),
       home: Directionality(
-          textDirection: TextDirection.rtl, child: RigsterScreen()),
+          textDirection: TextDirection.rtl, child: GetOtpScreen()),
     );
   }
 }

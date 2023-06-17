@@ -6,6 +6,7 @@ import 'package:watch_store/components/main_button.dart';
 import 'package:watch_store/utility/dimens.dart';
 import 'package:watch_store/utility/extention.dart';
 import 'package:watch_store/utility/strings.dart';
+import 'package:watch_store/utility/text_style.dart';
 
 class RigsterScreen extends StatelessWidget {
   RigsterScreen({super.key});
@@ -14,7 +15,19 @@ class RigsterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(),
+        appBar: PreferredSize(
+          preferredSize: Size(Get.width, Get.height * .1),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back)),
+              const Text(
+                AppStrings.register,
+                style: LightAppTextStyles.title,
+              )
+            ],
+          ),
+        ),
         body: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
           child: SizedBox(
@@ -50,7 +63,7 @@ class RigsterScreen extends StatelessWidget {
                 ),
                 AppDimens.large.height,
                 MainButton(
-                  text: AppStrings.next,
+                  text: AppStrings.register,
                   onPressed: () {},
                 )
               ],

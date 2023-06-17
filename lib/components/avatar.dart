@@ -3,6 +3,7 @@ import 'package:watch_store/gen/assets.gen.dart';
 import 'package:watch_store/utility/dimens.dart';
 import 'package:watch_store/utility/extention.dart';
 import 'package:watch_store/utility/strings.dart';
+import 'package:watch_store/utility/text_style.dart';
 
 class Avatar extends StatelessWidget {
   const Avatar({super.key});
@@ -16,7 +17,10 @@ class Avatar extends StatelessWidget {
           child: Assets.images.image.avatar.image(height: 100, width: 100),
         ),
         AppDimens.medium.height,
-        const Text(AppStrings.chooseProfileimage)
+        const Text(
+          AppStrings.chooseProfileimage,
+          style: LightAppTextStyles.avatarText,
+        )
       ],
     );
   }
