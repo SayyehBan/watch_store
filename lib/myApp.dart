@@ -1,8 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:watch_store/screens/otp/get_otp_screen.dart';
+import 'package:watch_store/route/names.dart';
+import 'package:watch_store/route/routes.dart';
 import 'package:watch_store/utility/theme.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,11 +13,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('fa'), // Persian
+      ],
+      locale: const Locale('fa'),
       title: 'فروشگاه ساعت',
       debugShowCheckedModeBanner: false,
       theme: lightTheme(),
-      home: Directionality(
-          textDirection: TextDirection.rtl, child: GetOtpScreen()),
+      initialRoute: ScreenNames.root,
+      routes: routes,
     );
   }
 }
