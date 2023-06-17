@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: const [
         Locale('fa'), // Persian
+        Locale('en'), // Persian
       ],
       locale: const Locale('fa'),
       title: 'فروشگاه ساعت',
